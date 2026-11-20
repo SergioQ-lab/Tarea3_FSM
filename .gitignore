@@ -1,0 +1,41 @@
+# Carpetas temporales y de compilación de Quartus
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+hc_output/
+sld_design_entry/
+*_sim/
+
+# Archivos generados automáticamente y respaldos
+*.bak
+*.rpt
+*.summary
+*.smsg
+*.pin
+*.done
+*.jdi
+*.sld
+*.sof
+*.pof
+*.rbf
+*.ttf
+*.hexout
+*.jam
+*.jbc
+*.ekp
+*.qws
+*.ddb
+*.qdf
+*_generation_script*
+
+# Archivos de simulación (ModelSim / Questa)
+transcript
+vsim.wlf
+work/
+*.mti
+*.mpf
+
+# Configuración local de VS Code (opcional)
+.vscode/
