@@ -39,3 +39,6 @@ work/
 
 # Configuración local de VS Code (opcional)
 .vscode/
+
+# Carpeta de enunciados PDF
+p3_pdf/
