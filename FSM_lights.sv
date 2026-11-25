@@ -1,3 +1,28 @@
+// --------------------------------------------------------------------
+// Universitat Politècnica de València
+// Departamento de Ingeniería Electronica
+// --------------------------------------------------------------------
+// Sistemas Digitales Programables MUISE
+// Curso 2026 - 2027
+// --------------------------------------------------------------------
+// Nombre del archivo: FSM_lights.sv
+//
+// Descripción: Este código SystemVerilog implementa una máquina de
+// estados de Moore tipo Medvedev de 14 estados (codificación Johnson)
+// para generar el patrón de luces, con las siguientes entradas y salidas:
+// 1. CLK, Reloj activo por flanco de subida.
+// 2. RSTn, Reset asíncrono activo a nivel bajo.
+// 3. ENABLE, Habilitación de avance de estado.
+// 4. LEDG, Bus de salida de 8 bits para los LEDs verdes.
+//
+// --------------------------------------------------------------------
+// Versión: V1.0 | Fecha Modificación: 25/11/2026
+//
+// Autor(es): Sergio Quesada Moreno y Pablo Ruíz López
+// Ordenador de trabajo: DISE02
+//
+// --------------------------------------------------------------------
+
 module FSM_lights (
 
    input  logic       CLK,

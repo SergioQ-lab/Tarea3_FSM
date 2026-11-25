@@ -1,3 +1,31 @@
+// --------------------------------------------------------------------
+// Universitat Politècnica de València
+// Departamento de Ingeniería Electronica
+// --------------------------------------------------------------------
+// Sistemas Digitales Programables MUISE
+// Curso 2026 - 2027
+// --------------------------------------------------------------------
+// Nombre del archivo: FSM_speed.sv
+//
+// Descripción: Este código SystemVerilog implementa una máquina de
+// estados de Mealy para detectar flancos de bajada en dos pulsadores y
+// generar un pulso de control de un ciclo de reloj, con las siguientes
+// entradas y salidas:
+// 1. CLK, Reloj activo por flanco de subida.
+// 2. RSTn, Reset asíncrono activo a nivel bajo.
+// 3. KEY_UP, Pulsador activo a nivel bajo para incrementar.
+// 4. KEY_DN, Pulsador activo a nivel bajo para decrementar.
+// 5. ENABLE, Pulso de habilitación de 1 ciclo al pulsar un botón.
+// 6. UP_DOWN, Sentido de cuenta (1 incrementar, 0 decrementar).
+//
+// --------------------------------------------------------------------
+// Versión: V1.0 | Fecha Modificación: 25/11/2026
+//
+// Autor(es): Sergio Quesada Moreno y Pablo Ruíz López
+// Ordenador de trabajo: DISE02
+//
+// --------------------------------------------------------------------
+
 module FSM_speed (
 
 	input logic CLK,

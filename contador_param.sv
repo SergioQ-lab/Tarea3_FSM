@@ -1,18 +1,28 @@
-// -------------------------------------------------------------------
-// Universitat Politècnica de València 
-// Departamento de Ingeniería Electronica 
-// -------------------------------------------------------------------
-// Sistemas Digitales Programables MUISE 
-// Curso 2026 - 2027 
-// -------------------------------------------------------------------
-// Nombre del archivo: contador_param.v 
-// 
-// Descripción: 
-// -------------------------------------------------------------------
-//   Versión: V1.0 | Fecha Modificación: 12/10/2026 
-// 
-//   Autor(es): Pablo Ruiz López y Sergio Quesada Moreno 
-//   Ordenador de trabajo: DISE01 // 
+// --------------------------------------------------------------------
+// Universitat Politècnica de València
+// Departamento de Ingeniería Electronica
+// --------------------------------------------------------------------
+// Sistemas Digitales Programables MUISE
+// Curso 2026 - 2027
+// --------------------------------------------------------------------
+// Nombre del archivo: contador_param.sv
+//
+// Descripción: Este código SystemVerilog implementa un contador
+// parametrizable ascendente/descendente (parámetro fin_cuenta) con la
+// siguiente funcionalidad de sus entradas y salidas:
+// 1. clk, Reloj activo por flanco de subida.
+// 2. reset, Reset síncrono activo a nivel bajo.
+// 3. enable, Habilitación de la cuenta.
+// 4. UP_DOWN, Sentido de cuenta (1 ascendente, 0 descendente).
+// 5. TC, Terminal Count activo en alto al alcanzar el fin de cuenta.
+// 6. cuenta, Valor actual de la cuenta de N bits.
+//
+// --------------------------------------------------------------------
+// Versión: V1.0 | Fecha Modificación: 25/11/2026
+//
+// Autor(es): Sergio Quesada Moreno y Pablo Ruíz López
+// Ordenador de trabajo: DISE02
+//
 // --------------------------------------------------------------------
 
 module contador_param #(

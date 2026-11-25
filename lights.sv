@@ -1,16 +1,26 @@
-// -------------------------------------------------------------------
-// Universitat Politècnica de València 
-// Departamento de Ingeniería Electronica 
-// -------------------------------------------------------------------
-// Sistemas Digitales Programables MUISE 
-// Curso 2026 - 2027 
-// -------------------------------------------------------------------
-// Nombre del archivo: 
-// -------------------------------------------------------------------
-//   Versión: V1.0 | Fecha Modificación: 03/12/2026 
-// 
-//   Autor(es): Pablo Ruiz López y Sergio Quesada Moreno 
-//   Ordenador de trabajo: DISE01 // 
+// --------------------------------------------------------------------
+// Universitat Politècnica de València
+// Departamento de Ingeniería Electronica
+// --------------------------------------------------------------------
+// Sistemas Digitales Programables MUISE
+// Curso 2026 - 2027
+// --------------------------------------------------------------------
+// Nombre del archivo: lights.sv
+//
+// Descripción: Este código SystemVerilog integra el divisor de
+// frecuencia (contador_param) y la FSM de luces (FSM_lights) para el
+// Apartado 1, con las siguientes entradas y salidas:
+// 1. CLOCK_50, Reloj principal de 50 MHz activo por flanco de subida.
+// 2. SW, Interruptor SW[0] de habilitación del movimiento de luces.
+// 3. KEY, Pulsador KEY[0] de reset.
+// 4. LEDG, Salida de 8 bits conectada a los LEDs verdes.
+//
+// --------------------------------------------------------------------
+// Versión: V1.0 | Fecha Modificación: 25/11/2026
+//
+// Autor(es): Sergio Quesada Moreno y Pablo Ruíz López
+// Ordenador de trabajo: DISE02
+//
 // --------------------------------------------------------------------
 
 module lights #(
@@ -50,7 +60,7 @@ module lights #(
 	FSM_lights FSM_lights_inst (
 	
 		.CLK(CLOCK_50),
-		.RSTn(~KEY[0]),
+		.RSTn(KEY[0]),
 		.ENABLE(TC),
 		.LEDG(LEDG)
 	
